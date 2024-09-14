@@ -3,17 +3,19 @@ from turtle import *
 
 reset()
 
-kx = 10  # x-axis scale
-ky = 10  # y-axis scale
+kx = 20  # x-axis scale
+ky = 20  # y-axis scale
+
 
 def f(x):
     return 6 * math.exp(x - 1) - 3 * x - x ** 3
 
+
 color('red')
 width(2)
 
-x_min = -4
-x_max = 5
+x_min = -3
+x_max = 4
 y_max = 10
 
 up()
@@ -31,7 +33,7 @@ width(3)
 
 x = x_min
 y = f(x)
-dx = math.pi/25
+dx = math.pi / 25
 
 # Move to the initial point of the curve
 up()
