@@ -1,5 +1,4 @@
-from collections.abc import MutableSet
-from math import trunc
+
 from random import randint
 
 N = 12

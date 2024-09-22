@@ -1,5 +1,5 @@
 def elem(n):
-    return (-2/5)**n
+    return (2/5)**n
 
 alph = 0.01
 n = 1

@@ -18,7 +18,7 @@ print('\tx', '\t\t y', '\t\t y**2', '\texp(-y)')
 print('\t-------------------------------')
 for x in [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]:
     y = 6 * math.exp(x - 1) - 3 * x - x ** 3
-print('\t', round(x, 2), '\t', round(y, 3), '\t',
+    print('\t', round(x, 2), '\t', round(y, 3), '\t',
       round(y ** 2, 3), '\t', round(exp(-y), 3))
 # %% Використання циклу while
 from math import sin, exp

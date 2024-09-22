@@ -1,4 +1,5 @@
 import sys #0, 2
+import math
 
 A = float(input('A='))
 B = float(input('B='))
@@ -8,7 +9,7 @@ dig = len(str(int(1 / eps)))  # кількість десяткових цифр
 
 # для округлення результату
 def F(x):
-    y1 = x ** (1/3) + 2 * (x ** 2) ** (1/3)
+    y1 =  x ** (1/3) + 2 * (x ** 2) ** (1/3)
     y2 = 3.0
     return y1 - y2
 
