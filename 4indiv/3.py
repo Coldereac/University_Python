@@ -1,5 +1,4 @@
 import malynevskyi1
-import subprocess
 
 print("Through IDE")
 print("First const = ", malynevskyi1.const1_1)

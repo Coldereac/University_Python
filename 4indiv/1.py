@@ -14,7 +14,7 @@ result = subprocess.run(["cat", "1.txt"], stdout=subprocess.PIPE, text=True)
 print("Result from file: ")
 print(result.stdout)
 
-# %% Отримання з файлу
+#%% Отримання з файлу
 file = open("1.txt", "r")
 data = file.read().strip()
 file.close()
