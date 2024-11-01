@@ -12,7 +12,7 @@ def anglegrad(a, b):  # кут між векторами a,b в градусах
 
 plt.close('all')
 A = np.array([-1, -2, 1])
-B = np.array([-4, 2, 5])
+B = np.array([-4, 2, 10])
 C = np.array([-8, -2, 2])
 X, Y, Z = zip(A, B, C, A)
 fig = plt.figure()

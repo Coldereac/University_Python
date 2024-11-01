@@ -33,6 +33,6 @@ Z = A[2] + p * AB[2] + q * AC[2]
 ax.plot_surface(X, Y, Z, rstride=1, cstride=2, color='c', alpha=0.3)
 
 ne = nrm / np.linalg.norm(nrm)  # одиничний вектор нормалі
-ax.quiver(*E, *(1 * ne), linewidth=2, color='b', arrow_length_ratio=0.25)
-
+ax.quiver(*E, *(3 * ne), linewidth=2, color='b', arrow_length_ratio=0.25)
+ax.set_aspect('equal')
 plt.show()

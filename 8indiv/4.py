@@ -62,16 +62,17 @@ ax.quiver(*O, *-Nrm, color='k', length=1.5, arrow_length_ratio=0.1, label="Norma
 
 max_range = np.ptp(np.array([A, B, C]), axis=0).max() / 2
 
-mid_x = (A[0] + B[0] + C[0]) / 3
-
-mid_y = (A[1] + B[1] + C[1]) / 3
-
-mid_z = (A[2] + B[2] + C[2]) / 3
-
-ax.set_xlim(mid_x - max_range, mid_x + max_range)
-
-ax.set_ylim(mid_y - max_range, mid_y + max_range)
-
-ax.set_zlim(mid_z - max_range, mid_z + max_range)
+# mid_x = (A[0] + B[0] + C[0]) / 3
+#
+# mid_y = (A[1] + B[1] + C[1]) / 3
+#
+# mid_z = (A[2] + B[2] + C[2]) / 3
+#
+# ax.set_xlim(mid_x - max_range, mid_x + max_range)
+#
+# ax.set_ylim(mid_y - max_range, mid_y + max_range)
+#
+# ax.set_zlim(mid_z - max_range, mid_z + max_range)
+ax.set_aspect('equal')
 
 plt.show()
