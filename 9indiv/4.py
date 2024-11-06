@@ -53,12 +53,12 @@ ax.quiver(x0, y0, z0, normal_vector[0], normal_vector[1], normal_vector[2], colo
 
 t = np.linspace(-1, 1, 50)
 xc = t
-yc = y0
+yc = y0*np.ones(xc.shape)
 zc = z_func(xc, yc)
 ax.plot(xc, yc, zc, color='orange')
 
-xc = x0
 yc = t
+xc = x0*np.ones(yc.shape)
 zc = z_func(xc, yc)
 ax.plot(xc, yc, zc, color='green')
 
