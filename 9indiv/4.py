@@ -63,8 +63,8 @@ zc = z_func(xc, yc)
 ax.plot(xc, yc, zc, color='green')
 
 # Tangent vectors at the point (x0, y0, z0)
-tangent_x = np.array([1, 0, float(dz_dx_val)])  # Tangent vector in x-direction
-tangent_y = np.array([0, 1, float(dz_dy_val)])  # Tangent vector in y-direction
+tangent_x = np.array([1, 0, float(dz_dx_val)])
+tangent_y = np.array([0, 1, float(dz_dy_val)])
 ax.quiver(x0, y0, z0, *tangent_x, color='purple', length=0.5)
 ax.quiver(x0, y0, z0, *tangent_y, color='cyan', length=0.5)
 

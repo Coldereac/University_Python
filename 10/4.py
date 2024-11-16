@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-from matplotlib.figure import figaspect
 from sympy import symbols, integrate, And, solve, plot_implicit
 
 x, y = symbols('x y')
