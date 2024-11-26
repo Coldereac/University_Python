@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import dblquad, nquad
-from sympy import symbols, sqrt, integrate
+from sympy import *
 
 plt.close('all')
 
@@ -15,6 +15,15 @@ xbnd = lambda: [0, 1]
 ybnd = lambda x: [g(x), h(x)]
 I2 = nquad(f, [ybnd, xbnd])
 print("I2 ={:5.3}".format(I2[0]))
+
+x, y = symbols('x y')
+f_sym = 12 * x ** 2 * y ** 2 + 16 * x ** 3 * y ** 3
+y_upper =  x**3
+y_lower = -x**(S(1)/3)
+x_lower = 0
+x_upper = 1
+I3 = integrate(integrate(f_sym, (y, y_lower, y_upper)), (x, x_lower, x_upper))
+print("I3 = ", I3)
 
 xh = np.linspace(-1, 2, num=100)
 xg = np.linspace(0, 2, num=100)
